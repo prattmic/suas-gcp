@@ -8,7 +8,8 @@ instance_name=interop-server-$(date +%F-%H-%M-%S)
 gcloud compute instances create ${instance_name} \
     --image ubuntu-14-04 \
     --zone us-central1-c \
-    --machine-type n1-standard-1
+    --machine-type n1-standard-1 \
+    --tags http-server
 
 # FIXME(prattmic): This may be flaky
 echo "Waiting for VM boot..."
