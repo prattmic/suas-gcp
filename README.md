@@ -4,6 +4,8 @@ Deploy SUAS interop on GCP
 1. Perform [Compute Engine Setup](https://cloud.google.com/compute/docs/quickstart#setup).
    You just need to get through step 6, where you configure gcloud for your
    project.
+2. Edit `keyfile` in `new_vm.sh` to point to a keyfile that has access to
+   your Github account.
 2. `./new_vm.sh` (gcloud will have you create SSH keys for the machine)
 3. ???
 4. Profit!  Click the link to see your server.
