@@ -25,4 +25,4 @@ gcloud compute instances list ${instance_name} --zone us-central1-c
 
 info=$(gcloud compute instances list ${instance_name} --zone us-central1-c)
 ip=$(echo ${info} | tail -n 1 | awk '{print $12}')
-echo "\nServer: http://${ip}/"
+echo -e "\nServer: http://${ip}/"
